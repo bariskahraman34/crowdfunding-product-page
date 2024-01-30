@@ -167,3 +167,19 @@ body{
 .about-project{
     padding: 48px;
 }
+
+.about-heading{
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.about-content{
+    color: #7A7A7A;
+    line-height: 30px;
+}
+
+.second-p{
+    margin: 40px 0px;
+}
