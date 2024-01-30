@@ -3,3 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    font-family: 'Commissioner', sans-serif;
+    background: url('../img/bg.png');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #FAFAFA;
+}
