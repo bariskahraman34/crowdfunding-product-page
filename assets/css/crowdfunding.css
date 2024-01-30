@@ -114,6 +114,8 @@ body{
 
 /* Header Ends */
 
+
+/* Fundraising */
 .fundraising-info{
     padding: 48px;
 }
@@ -157,4 +159,11 @@ body{
     height: 12px;
     border-radius: 33.5px;
     background: #3CB3AB;
+}
+
+/* Funraising Ends */
+
+/* About Project */
+.about-project{
+    padding: 48px;
 }
