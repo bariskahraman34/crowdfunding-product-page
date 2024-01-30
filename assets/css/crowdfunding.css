@@ -7,11 +7,12 @@
 body{
     font-family: 'Commissioner', sans-serif;
     background: url('../img/bg.png');
-    background-position: top center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-color: #FAFAFA;
 }
+
+/* Navbar */
 
 .nav-bar{
     display: flex;
@@ -33,6 +34,71 @@ body{
     font-weight: 500;
 }
 
+/* Navbar Ends */
+
 .container{
     width: 730px;
+    margin-top: 180px;
+    margin-inline: auto;
+    position: relative;
+}
+
+/* Header */
+
+.header-logo{
+    position: absolute;
+    left: 50%;
+    top: -25px;
+}
+
+.header{
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: #FFF;
+    padding: 56px 48px 48px 48px;
+}
+
+.heading{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.heading-content{
+    color: #7A7A7A;
+    margin-bottom: 40px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+.button{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+#back-to-project{
+    padding: 18px 40px;
+    border-radius: 33.5px;
+    background: #3CB3AB;
+    color: #FFF;
+    font-weight: 700;
+}
+
+#bookmark{
+    position: relative;
+    border-radius: 33.5px;
+    background: rgba(47, 47, 47, .05);
+    color: #7A7A7A;
+    font-weight: 700;
+    padding: 18px 24px 18px 72px;
+}
+
+#bookmark img{
+    position: absolute;
+    left: 0;
 }
