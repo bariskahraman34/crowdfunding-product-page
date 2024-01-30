@@ -12,3 +12,23 @@ body{
     background-size: cover;
     background-color: #FAFAFA;
 }
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 48px 166px 60px 166px;
+}
+
+.nav-bar .nav-links{
+    list-style-type: none;
+    display: flex;
+    gap: 32px;
+}
+
+.nav-bar .link{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 13px;
+    font-weight: 500;
+}
