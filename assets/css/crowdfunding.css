@@ -40,7 +40,19 @@ body{
     width: 730px;
     margin-top: 180px;
     margin-inline: auto;
+}
+
+.items-container{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.item{
+    background: #FFF;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
 }
 
 /* Header */
@@ -53,9 +65,6 @@ body{
 
 .header{
     text-align: center;
-    border-radius: 8px;
-    border: 1px solid rgba(0, 0, 0, 0.05);
-    background: #FFF;
     padding: 56px 48px 48px 48px;
 }
 
@@ -101,4 +110,51 @@ body{
 #bookmark img{
     position: absolute;
     left: 0;
+}
+
+/* Header Ends */
+
+.fundraising-info{
+    padding: 48px;
+}
+
+.fundraising-elements{
+    display: flex;
+}
+
+.fundraising-element{
+    display: flex;
+    flex-direction: column;
+    margin-left: 47px;
+    gap: 8px;
+    padding-right: 70px;
+    border-right: 2px solid rgba(0, 0, 0, 0.15);
+}
+
+.fundraising-element:first-child{
+    margin-left: 0px !important;
+}
+
+.fundraising-element h4{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.fundraising-element span{
+    color: #7A7A7A;
+    font-size: 15px;
+}
+
+.progress-bar{
+    width: 100%;
+    border-radius: 33.5px;
+    background:rgba(47, 47, 47, .05);
+    margin-top: 40px;
+}
+
+.progress-inline{
+    width: 78%;
+    height: 12px;
+    border-radius: 33.5px;
+    background: #3CB3AB;
 }
