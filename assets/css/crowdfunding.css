@@ -300,13 +300,13 @@ body{
 
 .modal{
     width: 730px;
-    margin-top: 180px;
-    margin-inline: auto;
-    margin-bottom: 124px;
     border-radius: 8px;
     border: 1px solid rgba(0, 0, 0, 0.05);
     background: #FFF;
-    position: relative;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
 .modal form{
@@ -473,4 +473,52 @@ body{
 
 .close-modal:hover path#close-modal-icon{
     opacity: 1;
+}
+
+/* Success Dialog */
+
+.success-dialog{
+    width: 540px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: #FFF;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    padding: 48px;
+}
+
+.success-dialog-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.success-dialog img{
+    margin-bottom: 48px;
+}
+.success-dialog h3{
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.success-dialog p{
+    color: #7A7A7A;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.success-dialog button{
+    padding: 15px 32.5px;
+    border-radius: 33.5px;
+    background: #3CB3AB;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
 }
