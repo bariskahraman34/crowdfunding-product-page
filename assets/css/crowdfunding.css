@@ -97,6 +97,7 @@ body{
     background: #3CB3AB;
     color: #FFF;
     font-weight: 700;
+    transition: background .3s ease;
 }
 
 #bookmark{
@@ -108,7 +109,7 @@ body{
     padding: 18px 24px 18px 72px;
 }
 
-#bookmark img{
+#bookmark svg{
     position: absolute;
     left: 0;
 }
@@ -258,4 +259,15 @@ body{
     pointer-events: none;
     background: #2F2F2F;
     padding: 16px 38px;
+}
+
+/* Hover Effects */
+
+.buttons #back-to-project:hover{
+    background: #147A73;
+}
+
+#bookmark:hover circle#bookmark-icon{
+    transition: fill .3s ease;
+    fill: #707070;
 }
