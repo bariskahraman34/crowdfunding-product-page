@@ -247,6 +247,7 @@ body{
     font-weight: 700;
     text-decoration: none;
     padding: 15px 33px;
+    transition: background .2s ease;
 }
 
 /* No Left Container */
@@ -267,7 +268,24 @@ body{
     background: #147A73;
 }
 
-#bookmark:hover circle#bookmark-icon{
+#bookmark:hover circle#bookmark-icon-circle{
     transition: fill .3s ease;
     fill: #707070;
+}
+
+.select-reward-btn:hover{
+    background: #147A73;
+}
+
+/* Active Classes Css */
+#bookmark.active circle#bookmark-icon-circle{
+    fill: #147A73;
+}
+
+#bookmark.active path#bookmark-icon-path{
+    fill: white ;
+}
+
+#bookmark.active{
+    color: #147A73;
 }

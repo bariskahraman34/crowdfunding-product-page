@@ -42,11 +42,10 @@
                         Back this project
                     </a>
                     <a href="#" class="button" id="bookmark">
-                        <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle id="bookmark-icon" cx="28" cy="28" r="28" fill="#2F2F2F"/>
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M23 19V37L28 31.9419L33 37V19H23Z" fill="#B1B1B1"/>
+                        <svg id="bookmark-icon" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle id="bookmark-icon-circle"  cx="28" cy="28" r="28" fill="#2F2F2F"/>
+                            <path id="bookmark-icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M23 19V37L28 31.9419L33 37V19H23Z" fill="#B1B1B1"/>
                         </svg>
-                            
                         Bookmark
                     </a>
                 </div>
@@ -132,5 +131,13 @@
             </div>
         </div>
     </div>
+    
+    <!-- Active Classes -->
+    <script>
+        const bookmark = document.querySelector('#bookmark')
+        bookmark.addEventListener('click',function(){
+            bookmark.classList.toggle('active')
+        })
+    </script>
   </body>
 </html>
