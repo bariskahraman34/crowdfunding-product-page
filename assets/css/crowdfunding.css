@@ -306,6 +306,7 @@ body{
     border-radius: 8px;
     border: 1px solid rgba(0, 0, 0, 0.05);
     background: #FFF;
+    position: relative;
 }
 
 .modal form{
@@ -459,4 +460,17 @@ body{
 
 .modal-option-container:has(.radio-input:checked) .option-bottom-container{
     display: flex;
+}
+
+/* Close Modal */
+
+.close-modal{
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    cursor: pointer;
+}
+
+.close-modal:hover path#close-modal-icon{
+    opacity: 1;
 }
