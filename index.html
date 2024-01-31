@@ -11,7 +11,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/crowdfunding.css" />
-    <script src="assets/js/crowdfunding.js" defer></script>
     <title>Crowdfunding Product Page</title>
   </head>
   <body>
@@ -132,6 +131,66 @@
                 </div>
             </div>
         </div>
+        <!-- Modal -->
+        <dialog class="modal">
+            <div class="about-project item">
+                <h2 class="about-heading">Back this project</h2>
+                <p class="about-content">
+                    Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world? 
+                </p>
+                <!-- option container -->
+                <div class="option-container">
+                    <div class="option-top">
+                        <h3 class="option-title">Bamboo Stand</h3>
+                        <span class="pledge-amount">Pledge $25 or more</span>
+                    </div>
+                    <p class="option-content">
+                        You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you’ll be added to a special Backer member list.
+                    </p>
+                    <div class="option-bottom">
+                        <span class="remaining-number">
+                            101
+                            <span class="left">left</span>
+                        </span>
+                        <a href="#" class="select-reward-btn">Select Reward</a>
+                    </div>
+                </div>
+                <!-- option container -->
+                <div class="option-container">
+                    <div class="option-top">
+                        <h3 class="option-title">Black Edition Stand</h3>
+                        <span class="pledge-amount">Pledge $75 or more</span>
+                    </div>
+                    <p class="option-content">
+                        You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.
+                    </p>
+                    <div class="option-bottom">
+                        <span class="remaining-number">
+                            64
+                            <span class="left">left</span>
+                        </span>
+                        <a href="#" class="select-reward-btn">Select Reward</a>
+                    </div>
+                </div>
+                <!-- option container -->
+                <div class="option-container no-left">
+                    <div class="option-top">
+                        <h3 class="option-title">Mahogany Special Edition</h3>
+                        <span class="pledge-amount">Pledge $200 or more</span>
+                    </div>
+                    <p class="option-content">
+                        You get two Special Edition Mahogany stands, a Backer T-Shirt, and a personal thank you. You’ll be added to our Backer member list. Shipping is included. 
+                    </p>
+                    <div class="option-bottom">
+                        <span class="remaining-number">
+                            0
+                            <span class="left">left</span>
+                        </span>
+                        <a href="#" class="select-reward-btn">Out of stock</a>
+                    </div>
+                </div>
+            </div>
+        </dialog>
     </div>
     
     <!-- Active Classes -->
@@ -143,5 +202,6 @@
             bookmarkTitle.textContent = `${bookmark.classList.contains('active') ? "Bookmarked" : "Bookmark"}`;
         })
     </script>
+    <script src="assets/js/crowdfunding.js"></script>
   </body>
 </html>

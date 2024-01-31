@@ -289,3 +289,20 @@ body{
 #bookmark.active{
     color: #147A73;
 }
+
+/* Modal */
+
+.modal{
+    width: 730px;
+    margin-top: 180px;
+    margin-inline: auto;
+    margin-bottom: 124px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    background: #FFF;
+}
+
+::backdrop{
+    opacity: 0.4988;
+    background: #000;
+}
