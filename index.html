@@ -46,7 +46,9 @@
                             <circle id="bookmark-icon-circle"  cx="28" cy="28" r="28" fill="#2F2F2F"/>
                             <path id="bookmark-icon-path" fill-rule="evenodd" clip-rule="evenodd" d="M23 19V37L28 31.9419L33 37V19H23Z" fill="#B1B1B1"/>
                         </svg>
-                        Bookmark
+                        <span id="bookmark-title">
+                            Bookmark
+                        </span>
                     </a>
                 </div>
             </div>
@@ -134,9 +136,11 @@
     
     <!-- Active Classes -->
     <script>
-        const bookmark = document.querySelector('#bookmark')
+        const bookmark = document.querySelector('#bookmark');
+        const bookmarkTitle = document.querySelector('#bookmark-title');
         bookmark.addEventListener('click',function(){
-            bookmark.classList.toggle('active')
+            bookmark.classList.toggle('active');
+            bookmarkTitle.textContent = `${bookmark.classList.contains('active') ? "Bookmarked" : "Bookmark"}`;
         })
     </script>
   </body>
