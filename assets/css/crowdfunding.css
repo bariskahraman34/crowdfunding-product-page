@@ -40,6 +40,7 @@ body{
     width: 730px;
     margin-top: 180px;
     margin-inline: auto;
+    margin-bottom: 124px;
 }
 
 .items-container{
@@ -182,4 +183,79 @@ body{
 
 .second-p{
     margin: 40px 0px;
+}
+
+/* Options */
+.option-container{
+    margin-bottom: 24px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: #FFF;
+    padding: 38px 32px 32px 32px;
+}
+
+.option-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.option-title{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.pledge-amount{
+    color: #3CB3AB;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.option-content{
+    color: #7A7A7A;
+    line-height: 30px;
+    margin-bottom: 24px;
+}
+
+.option-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.remaining-number{
+    display: flex;
+    align-items: center;
+    color: #000;
+    font-size: 32px;
+    font-weight: 700;
+    gap: 8px;
+}
+
+.left{
+    color: #7A7A7A;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.select-reward-btn{
+    border-radius: 33.5px;
+    background: #3CB3AB;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 15px 33px;
+}
+
+/* No Left Container */
+
+.no-left{
+    opacity: .5;
+}
+
+.no-left .select-reward-btn{
+    pointer-events: none;
+    background: #2F2F2F;
+    padding: 16px 38px;
 }
