@@ -134,36 +134,80 @@
         <!-- Modal -->
         <dialog class="modal">
             <div class="about-project item">
-                <h2 class="about-heading">Back this project</h2>
-                <p class="about-content">
-                    Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world? 
-                </p>
-                <!-- option container -->
-                <div class="modal-option-container">
-                    <input type="checkbox">
-                    <div class="option-info-container">
-                        <div class="option-top-left-container">
-                            <h3 class="option-title">Bamboo Stand</h3>
-                            <span class="pledge-amount">Pledge 25$ or more</span>
-                            <span class="left">101 left</span>
-                        </div>
-                        <div class="option-content">
-                            <p>
-                                You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you'll be added to a special Backer member list.
-                            </p>
+                <div class="heading-container">
+                    <h2 class="about-heading">Back this project</h2>
+                    <p class="about-content">
+                        Want to support us in bringing Mastercraft Bamboo Monitor Riser out in the world? 
+                    </p>
+                </div>
+                <form>
+                    <!-- option container -->
+                    <div class="modal-option-container">
+                        <input class="radio-input" type="radio" id="pledge-25" name="pledge-selection">
+                        <div class="option-info-container">
+                            <div class="option-top-container">
+                                <div class="option-top-left">
+                                    <label for="pledge-25" class="option-title">Bamboo Stand</label>
+                                    <span class="pledge-amount">Pledge 25$ or more</span>
+                                </div>
+                                <span class="remaining-number">
+                                    101
+                                    <span class="left">left</span>
+                                </span>
+                            </div>
+                            <div class="option-content">
+                                <p>
+                                    You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you'll be added to a special Backer member list.
+                                </p>
+                            </div>
                         </div>
                         <div class="option-bottom-container">
-                            <label for="pledge-amount-input">Enter your pledge</label>
+                            <label class="pledge-label" for="bamboo-stand-pledge">Enter your pledge</label>
                             <div class="pledge-container">
                                 <div class="pledge-input-container">
-                                    <input id="pledge-amount-input" type="text">
-                                    <button type="submit">Continue</button>
+                                    <div class="pledge-amount-input-container">
+                                        <span>$</span>
+                                        <input class="pledge-input" id="bamboo-stand-pledge" type="text">
+                                    </div>
                                 </div>
-
+                                <button class="continue-button" type="submit">Continue</button>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <!-- option container -->
+                    <div class="modal-option-container">
+                        <input class="radio-input" type="radio" name="pledge-selection" id="pledge-75">
+                        <div class="option-info-container">
+                            <div class="option-top-container">
+                                <div class="option-top-left">
+                                    <label for="pledge-75" class="option-title">Black Edition Stand</label>
+                                    <span class="pledge-amount">Pledge $75 or more</span>
+                                </div>
+                                <span class="remaining-number">
+                                    64
+                                    <span class="left">left</span>
+                                </span>
+                            </div>
+                            <div class="option-content">
+                                <p>
+                                    You get a Black Special Edition computer stand and a personal thank you. You’ll be added to our Backer member list. Shipping is included.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="option-bottom-container">
+                            <label class="pledge-label" for="black-edition-stand">Enter your pledge</label>
+                            <div class="pledge-container">
+                                <div class="pledge-input-container">
+                                    <div class="pledge-amount-input-container">
+                                        <span>$</span>
+                                        <input class="pledge-input" id="black-edition-stand" type="text">
+                                    </div>
+                                </div>
+                                <button class="continue-button" type="submit">Continue</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
             </div>
         </dialog>
     </div>

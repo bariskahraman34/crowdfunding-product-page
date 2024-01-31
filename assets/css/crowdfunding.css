@@ -205,6 +205,8 @@ body{
 .option-title{
     font-size: 18px;
     font-weight: 700;
+    transition: color .2s ease;
+    cursor: pointer;
 }
 
 .pledge-amount{
@@ -277,6 +279,10 @@ body{
     background: #147A73;
 }
 
+.modal .option-title:hover{
+    color: #3CB3AB;
+}
+
 /* Active Classes Css */
 #bookmark.active circle#bookmark-icon-circle{
     fill: #147A73;
@@ -302,7 +308,155 @@ body{
     background: #FFF;
 }
 
+.modal form{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 ::backdrop{
     opacity: 0.4988;
     background: #000;
+}
+
+.modal .heading-container{
+    margin-bottom: 32px;
+}
+
+.modal .about-heading{
+    margin-bottom: 16px;
+}
+
+.modal-option-container{
+    position: relative;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.modal .option-info-container{
+    padding: 32px 28px 24px 76px;
+}
+
+.modal .radio-input{
+    position: absolute;
+    top: 36px;
+    left: 28px;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+
+.modal .radio-input:checked{
+    appearance: none;
+    border-radius: 50%;
+    background-color: #3cb4ac;
+    border: 5px solid #fff;
+    -webkit-box-shadow: 0 0 0 1px rgba(122, 122, 122, 0.3);
+    box-shadow: 0 0 0 1px rgba(122, 122, 122, 0.3)
+}
+
+.modal-option-container{
+    border: 2px solid transparent;
+}
+
+.modal-option-container:has(.radio-input:checked){
+    border: 2px solid #3CB3AB;
+}
+
+.modal .option-top-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 17px;
+}
+
+.modal .option-top-left{
+    display: flex;
+    gap: 17px;
+}
+
+.modal .option-title{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.modal .remaining-number{
+    color: #000;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.modal .option-content{
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+}
+
+.modal .option-bottom-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 28px;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.modal .pledge-container{
+    display: flex;
+    gap: 16px;
+}
+
+.modal .pledge-input-container{
+    display: flex;
+}
+
+.modal .pledge-label{
+    color: #7A7A7A;
+    font-size: 15px;
+    line-height: 28px;
+}
+
+.modal .pledge-input-container{
+    padding: 15px 24px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 33.5px;
+}
+
+.modal .pledge-input-container span{
+    font-size: 14px;
+    font-weight: 700;
+    opacity: 0.25;
+}
+
+.modal .pledge-input{
+    max-width: 35px;
+    width: 100%;
+    border: none;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.modal .pledge-input:focus{
+    outline: none;
+}
+
+.modal .continue-button{
+    padding: 15px 24px;
+    border-radius: 33.5px;
+    border: none;
+    background: #3CB3AB;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* display none */
+
+.modal .option-bottom-container{
+    display: none;
+}
+
+.modal-option-container:has(.radio-input:checked) .option-bottom-container{
+    display: flex;
 }
