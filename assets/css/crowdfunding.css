@@ -256,6 +256,7 @@ body{
 
 .no-left{
     opacity: .5;
+    pointer-events: none;
 }
 
 .no-left .select-reward-btn{
@@ -354,10 +355,6 @@ body{
     border: 5px solid #fff;
     -webkit-box-shadow: 0 0 0 1px rgba(122, 122, 122, 0.3);
     box-shadow: 0 0 0 1px rgba(122, 122, 122, 0.3)
-}
-
-.modal-option-container{
-    border: 2px solid transparent;
 }
 
 .modal-option-container:has(.radio-input:checked){
