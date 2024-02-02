@@ -290,7 +290,8 @@
     <script>
         const bookmark = document.querySelector('#bookmark');
         const bookmarkTitle = document.querySelector('#bookmark-title');
-        bookmark.addEventListener('click',function(){
+        bookmark.addEventListener('click',function(e){
+            e.preventDefault();
             bookmark.classList.toggle('active');
             bookmarkTitle.textContent = `${bookmark.classList.contains('active') ? "Bookmarked" : "Bookmark"}`;
         })
